@@ -1,0 +1,13 @@
+ version: "3.3"
+
+ services:
+   api-students:
+     build: ./api-productos
+     image: mark2024/api-students
+     ports:
+       - 8000:8000
+   websimple:
+     build: ./api-usuarios
+     image: mark2024/api-usuarios
+     ports:
+       - 8080:80
